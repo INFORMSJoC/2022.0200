@@ -65,15 +65,22 @@ The scripts runs the Python script QCQP.py located in the src folder. This scrip
 
 ## Results
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+Figure 1 in the paper shows the results of the optimality gap for the various sized problem with no constraints.
 
-![Figure 1](results/mult-test.png)
+![Figure 1](results/opt_gap_noconstraints.eps.png)
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+Figures 2 to 4 in the paper show the percent of feasible instances, the feasibility gap, and the optimality gap vs. time. Figure 2 does this for the small instances, 
 
-![Figure 1](results/sum-test.png)
+![Figure 2](results/all_graphs_n10_m4_k10_l10.eps.png)
+
+Figure 3 for the medium instances,
+
+![Figure 3](results/all_graphs_n10_m4_k10_l10.eps.png)
+
+and Figure 4 for the large instances.
+
+![Figure 4](results/all_graphs_n10_m4_k10_l10.eps.png)
+
 
 ## Replicating
 
@@ -96,22 +103,12 @@ The medium examples are ran with
 cpulimit -l 100 -i python3 ../src/QCQP.py 1 3600 16 30 $seed 3600&>output$seed.txt&
 cpulimit -l 100 -i python3 ../src/QCQP.py 4 3600 16 30 $seed 3600&>output$seed.txt&
 ```
+The files resulting from running these scripts are currently in the results folder.
 
-To replicate the results in [Figure 1](results/mult-test), do either
-
+Figures [Figure 1](results/opt_gap_noconstraints.eps), [Figure 2](results/all_graphs_n10_m4_k10_l10.eps), 
+[Figure 3](results/all_graphs_n600_m4_k25_l15.eps), and [Figure 4](results/all_graphs_n600_m4_k25_l15.eps) are created by 
+running the following R script (using Rstudio or Rscript) from the script folder
 ```
-make mult-test
+DataAnalysis.R
 ```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
+The script will automatically generate all plots.
