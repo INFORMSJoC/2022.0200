@@ -105,8 +105,8 @@ cpulimit -l 100 -i python3 ../src/QCQP.py 4 3600 16 30 $seed 3600&>output$seed.t
 ```
 The files resulting from running these scripts are currently in the results folder.
 
-Figures [Figure 1](results/opt_gap_noconstraints.eps), [Figure 2](results/all_graphs_n10_m4_k10_l10.eps), 
-[Figure 3](results/all_graphs_n600_m4_k25_l15.eps), and [Figure 4](results/all_graphs_n600_m4_k25_l15.eps) are created by 
+Figures [Figure 1](results/opt_gap_noconstraints.eps.png), [Figure 2](results/all_graphs_n10_m4_k10_l10.eps.png), 
+[Figure 3](results/all_graphs_n600_m4_k25_l15.eps.png), and [Figure 4](results/all_graphs_n600_m4_k25_l15.eps.png) are created by 
 running the following R script (using Rstudio or Rscript) from the script folder
 ```
 DataAnalysis.R
