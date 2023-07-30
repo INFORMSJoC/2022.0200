@@ -5,17 +5,11 @@
 This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-First-order algorithms for robust optimization problems via
-convex-concave saddle-point Lagrangian reformulation (https://doi.org/10.1287/ijoc.2022.0200) by K. Postek and S. Shtern. 
+The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper 
+'First-order algorithms for robust optimization problems via convex-concave saddle-point Lagrangian reformulation' (https://doi.org/10.1287/ijoc.2022.0200) by K. Postek and S. Shtern. 
 The snapshot is based on 
 (https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
 in the development repository. 
-
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
 
 ## Cite
 
