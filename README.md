@@ -7,9 +7,6 @@ Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](
 
 The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper 
 'First-order algorithms for robust optimization problems via convex-concave saddle-point Lagrangian reformulation' (https://doi.org/10.1287/ijoc.2022.0200) by K. Postek and S. Shtern. 
-The snapshot is based on 
-(https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
 
 ## Cite
 
@@ -38,7 +35,7 @@ The goal of this software is to generate QCQP problems with ball uncertainty and
 
 ## Running
 
-In Linux, the experiment can be conducted using the script Run_QCQP_script.sh from the script folder
+In Linux, the experiment can be run using the script Run_QCQP_script.sh from the script folder
 
 ```
 chmod +x Run_QCQP_script.sh
@@ -46,13 +43,14 @@ chmod +x Run_QCQP_script.sh
 ```
 
 Note that script will run a total of 50 realizations in batches of 10.
-The parameter used in the script (inputed in this order) are
-m+1=4 (meaning 3 uncertain constraint and an objective, for running unconstrained problems choose 1)
-n=10 (dimension of variable x)
-l=10 (number of rows in linear transformation of x)
-k=10 (the dimension of the z_i in each constraint i)
-seed - calculated automatically
-Time limit=600  
+
+The parameters used in the script (input in this order) are
+- m+1=4: (meaning m=3 uncertain constraint and an objective, for running unconstrained problems choose 1)
+- n=10 (dimension of variable x)
+- l=10 (number of rows in linear transformation of x)
+- k=10 (the dimension of the z_i in each constraint i)
+- seed - calculated automatically
+- Time limit=600  
 
 The scripts runs the Python script QCQP.py located in the src folder. This script prepares the data and elementary functions and calls both SGSP and OCO with several parameter combination for solving the robuts problem.
 
