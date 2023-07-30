@@ -33,6 +33,12 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 The goal of this software is to generate QCQP problems with ball uncertainty and compare the performance of the approach suggested in the paper using the Lagrangian formulation with the existing approach based on online convex optimization.
 
+## Important dependencies
+
+Aside from standar Python numerical (numpy and scipy) and data analysis (pandas) libraries, this repository uses two optimization modelling packages:
+- gurobipy: needs to be used in combination with the Gurobi solver, used to solve the large-scale convex quadratic optimization problems
+- casadi: used in combination with the IPOPT solver, used to solve the small scale quadratic optimization problems with close-to-singular quadratic forms.
+
 ## Running
 
 In Linux, the experiment can be run using the script Run_QCQP_script.sh from the script folder
