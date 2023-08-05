@@ -35,7 +35,7 @@ The goal of this software is to generate QCQP problems with ball uncertainty and
 
 ## Important dependencies
 
-Aside from standar Python numerical (numpy and scipy) and data analysis (pandas) libraries, this repository uses two optimization modelling packages:
+Aside from standard Python numerical (numpy and scipy) and data analysis (pandas) libraries, this repository uses two optimization modelling packages:
 - gurobipy: needs to be used in combination with the Gurobi solver, used to solve the large-scale convex quadratic optimization problems
 - casadi: used in combination with the IPOPT solver, used to solve the small scale quadratic optimization problems with close-to-singular quadratic forms.
 
