@@ -39,6 +39,8 @@ Aside from standard Python numerical (numpy and scipy) and data analysis (pandas
 - gurobipy: needs to be used in combination with the Gurobi solver, used to solve the large-scale convex quadratic optimization problems
 - casadi: used in combination with the IPOPT solver, used to solve the small scale quadratic optimization problems with close-to-singular quadratic forms.
 
+Both can be installed using conda.
+
 ## Running
 
 In Linux, the experiment can be run using the script Run_QCQP_script.sh from the script folder
