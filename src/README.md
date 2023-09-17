@@ -1,6 +1,6 @@
 This folder consists of three Python scripts:
 
-QCQP.py is the main script that runs the robust quadratically constrained quadratic program. The file include:
+**QCQP.py** is the main script that runs the robust quadratically constrained quadratic program. The file include:
 - functions necessary for efficient setting up and manipulating the data used in such problems
 - the proper script which takes as command line arguments:
   - m (meaning m=3 uncertain constraint and an objective, for running unconstrained problems choose 1)
@@ -17,6 +17,6 @@ QCQP.py is the main script that runs the robust quadratically constrained quadra
 
   In the end, we have the call to our SGSP algorithm to solve the same problem.
 
-PrimalDualOCO.py which stores a single-function implementation of the methods we compare ourselves to.
+**PrimalDualOCO.py** which stores a single-function implementation of the methods we compare ourselves to.
 
-SGSP.py which stores the implementation of our SGSP algorithm.
+**SGSP.py** which stores the implementation of our SGSP algorithm.
