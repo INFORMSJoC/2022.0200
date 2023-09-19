@@ -103,7 +103,7 @@ cpulimit -l 100 -i python3 ../src/QCQP.py 1 600 15 25 $seed 1200&>output$seed.tx
 cpulimit -l 100 -i python3 ../src/QCQP.py 4 600 15 25 $seed 1200&>output$seed.txt&
 ```
 
-The medium examples are ran with
+The large examples are ran with
 ```
 cpulimit -l 100 -i python3 ../src/QCQP.py 1 3600 16 30 $seed 3600&>output$seed.txt&
 cpulimit -l 100 -i python3 ../src/QCQP.py 4 3600 16 30 $seed 3600&>output$seed.txt&

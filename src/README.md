@@ -13,9 +13,10 @@ This folder consists of three Python scripts:
 
   In the latter part of the script, all the data and relevant functions (data transformers, gradient computers etc.) are initialized and wrapped into a dict Data which serves as the main vehicle of carrying all components of the problem.
   
-  Later, we have the loop that runs the first-order methods we compare ourselves to, where the steering parameters are booleans i_FOP and i_FOD which indicated whether one uses first-order algorithms on the primal or dual side of the problem. All these methods are 
+  Later, we have the loop that runs the first-order methods we compare ourselves to, where the steering parameters are the booleans i_FOP and i_FOD, which indicated whether one uses first-order algorithms on the primal or dual side of the problem. 
+  All the possible combinations of these parameters are ran. 
 
-  In the end, we have the call to our SGSP algorithm to solve the same problem.
+  At the end of the script, we have the call to our SGSP algorithm to solve the same problem.
 
 **PrimalDualOCO.py** which stores a single-function implementation of the methods we compare ourselves to.
 
