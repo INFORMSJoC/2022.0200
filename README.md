@@ -1,12 +1,12 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
-
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+# Introduction
 
 The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper 
 'First-order algorithms for robust optimization problems via convex-concave saddle-point Lagrangian reformulation' (https://doi.org/10.1287/ijoc.2022.0200) by K. Postek and S. Shtern. 
+
+This archive is distributed in association with the [INFORMS Journal on
+Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
 ## Cite
 
@@ -38,6 +38,13 @@ The goal of this software is to generate QCQP problems with ball uncertainty and
 Aside from standard Python numerical (numpy and scipy) and data analysis (pandas) libraries, this repository uses two optimization modelling packages:
 - gurobipy: needs to be used in combination with the Gurobi solver, used to solve the large-scale convex quadratic optimization problems
 - casadi: used in combination with the IPOPT solver, used to solve the small scale quadratic optimization problems with close-to-singular quadratic forms.
+
+Both can be installed using conda through
+
+```
+conda install casadi
+conda install gurobipy
+```
 
 ## Running
 
@@ -96,7 +103,7 @@ cpulimit -l 100 -i python3 ../src/QCQP.py 1 600 15 25 $seed 1200&>output$seed.tx
 cpulimit -l 100 -i python3 ../src/QCQP.py 4 600 15 25 $seed 1200&>output$seed.txt&
 ```
 
-The medium examples are ran with
+The large examples are ran with
 ```
 cpulimit -l 100 -i python3 ../src/QCQP.py 1 3600 16 30 $seed 3600&>output$seed.txt&
 cpulimit -l 100 -i python3 ../src/QCQP.py 4 3600 16 30 $seed 3600&>output$seed.txt&
